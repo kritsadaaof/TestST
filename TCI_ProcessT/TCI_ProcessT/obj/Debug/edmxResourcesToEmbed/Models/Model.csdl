@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TCIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="OESO">
+    <Key>
+      <PropertyRef Name="SORECTYP" />
+    </Key>
+    <Property Name="SORECTYP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SONUM" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="SODAT" Type="DateTime" Precision="7" />
+    <Property Name="FLGVAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="DEPCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="SLMCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CUSCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SHIPTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="YOUREF" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="RFF" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="AREACOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="PAYTRM" Type="Int32" />
+    <Property Name="DLVDAT" Type="DateTime" Precision="7" />
+    <Property Name="DLVTIM" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="DLVDAT_IT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="NXTSEQ" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="35" Scale="0" />
+    <Property Name="DISC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DISCAMT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="TOTAL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="AMTRAT0" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="VATRAT" Type="Int32" />
+    <Property Name="VATAMT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NETAMT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NETVAL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CMPLDAT" Type="DateTime" Precision="7" />
+    <Property Name="DOCSTAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="DLVBY" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="USERID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="CHGDAT" Type="DateTime" Precision="7" />
+    <Property Name="USERPRN" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="PRNDAT" Type="DateTime" Precision="7" />
+    <Property Name="PRNCNT" Type="Int32" />
+    <Property Name="PRNTIM" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="AUTHID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="APPROVE" Type="DateTime" Precision="7" />
+    <Property Name="BILLTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ORGNUM" Type="Int32" />
+  </EntityType>
+  <EntityType Name="OESO_V">
+    <Key>
+      <PropertyRef Name="SORECTYP" />
+    </Key>
+    <Property Name="SORECTYP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SONUM" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="SODAT" Type="DateTime" Precision="7" />
+    <Property Name="FLGVAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="DEPCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="SLMCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CUSCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SHIPTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="YOUREF" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="RFF" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="AREACOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="PAYTRM" Type="Int32" />
+    <Property Name="DLVDAT" Type="DateTime" Precision="7" />
+    <Property Name="DLVTIM" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="DLVDAT_IT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="NXTSEQ" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DISC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DISCAMT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TOTAL" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="AMTRAT0" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="VATRAT" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="VATAMT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="NETAMT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="NETVAL" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CMPLDAT" Type="DateTime" Precision="7" />
+    <Property Name="DOCSTAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="DLVBY" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="USERID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="CHGDAT" Type="DateTime" Precision="7" />
+    <Property Name="USERPRN" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="PRNDAT" Type="DateTime" Precision="7" />
+    <Property Name="PRNCNT" Type="Int32" />
+    <Property Name="PRNTIM" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="AUTHID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="APPROVE" Type="DateTime" Precision="7" />
+    <Property Name="BILLTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ORGNUM" Type="Int32" />
+  </EntityType>
+  <EntityType Name="OESOIT">
+    <Key>
+      <PropertyRef Name="SORECTYP" />
+    </Key>
+    <Property Name="SORECTYP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SONUM" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="SEQNUM" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="SODAT" Type="DateTime" Precision="7" />
+    <Property Name="DLVDAT" Type="DateTime" Precision="7" />
+    <Property Name="CUSCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="STKCOD" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LOCCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="STKDES" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DEPCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="VATCOD" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="FREE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="ORDQTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CANCELQTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CANCELTYP" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="CANCELDAT" Type="DateTime" Precision="7" />
+    <Property Name="REMQTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TFACTOR" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="UNITPR" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TQUCOD" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DISC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DISCAMT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TRNVAL" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PACKING" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="OESOIT_V">
+    <Key>
+      <PropertyRef Name="SORECTYP" />
+    </Key>
+    <Property Name="SORECTYP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SONUM" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="SEQNUM" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="SODAT" Type="DateTime" Precision="7" />
+    <Property Name="DLVDAT" Type="DateTime" Precision="7" />
+    <Property Name="CUSCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="STKCOD" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LOCCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="STKDES" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DEPCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="VATCOD" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="FREE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="ORDQTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CANCELQTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CANCELTYP" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="CANCELDAT" Type="DateTime" Precision="7" />
+    <Property Name="REMQTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TFACTOR" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="UNITPR" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TQUCOD" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DISC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DISCAMT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TRNVAL" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PACKING" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TEST">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="TCIEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OESO" EntityType="Self.OESO" />
+    <EntitySet Name="OESO_V" EntityType="Self.OESO_V" />
+    <EntitySet Name="OESOIT" EntityType="Self.OESOIT" />
+    <EntitySet Name="OESOIT_V" EntityType="Self.OESOIT_V" />
+    <EntitySet Name="TEST" EntityType="Self.TEST" />
+    <EntitySet Name="ARMAS" EntityType="TCIModel.ARMAS" />
+  </EntityContainer>
+  <EntityType Name="ARMAS">
+    <Key>
+      <PropertyRef Name="cuscod" />
+    </Key>
+    <Property Name="cuscod" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="custyp" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="prenam" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="cusnam" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="addr01" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="addr02" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="addr03" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="zipcod" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="telnum" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="contact" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="cusnam2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="taxid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="orgnum" Type="Double" />
+    <Property Name="taxtyp" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="taxrat" Type="Double" />
+    <Property Name="taxgrp" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="taxcond" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="shipto" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="slmcod" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="areacod" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="paytrm" Type="Double" />
+    <Property Name="paycond" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="payer" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="tabpr" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="disc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="balance" Type="Double" />
+    <Property Name="chqrcv" Type="Double" />
+    <Property Name="crline" Type="Double" />
+    <Property Name="lasivc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="accnum" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="remark" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="dlvby" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="tracksal" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="creby" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="credat" Type="DateTime" Precision="3" />
+    <Property Name="userid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="chgdat" Type="DateTime" Precision="3" />
+    <Property Name="status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="inactdat" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TCIModelStoreContainer" CdmEntityContainer="TCIEntities">
+    <EntitySetMapping Name="OESO">
+      <EntityTypeMapping TypeName="TCIModel.OESO">
+        <MappingFragment StoreEntitySet="OESO">
+          <ScalarProperty Name="SORECTYP" ColumnName="SORECTYP" />
+          <ScalarProperty Name="SONUM" ColumnName="SONUM" />
+          <ScalarProperty Name="SODAT" ColumnName="SODAT" />
+          <ScalarProperty Name="FLGVAT" ColumnName="FLGVAT" />
+          <ScalarProperty Name="DEPCOD" ColumnName="DEPCOD" />
+          <ScalarProperty Name="SLMCOD" ColumnName="SLMCOD" />
+          <ScalarProperty Name="CUSCOD" ColumnName="CUSCOD" />
+          <ScalarProperty Name="SHIPTO" ColumnName="SHIPTO" />
+          <ScalarProperty Name="YOUREF" ColumnName="YOUREF" />
+          <ScalarProperty Name="RFF" ColumnName="RFF" />
+          <ScalarProperty Name="AREACOD" ColumnName="AREACOD" />
+          <ScalarProperty Name="PAYTRM" ColumnName="PAYTRM" />
+          <ScalarProperty Name="DLVDAT" ColumnName="DLVDAT" />
+          <ScalarProperty Name="DLVTIM" ColumnName="DLVTIM" />
+          <ScalarProperty Name="DLVDAT_IT" ColumnName="DLVDAT_IT" />
+          <ScalarProperty Name="NXTSEQ" ColumnName="NXTSEQ" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="DISC" ColumnName="DISC" />
+          <ScalarProperty Name="DISCAMT" ColumnName="DISCAMT" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="AMTRAT0" ColumnName="AMTRAT0" />
+          <ScalarProperty Name="VATRAT" ColumnName="VATRAT" />
+          <ScalarProperty Name="VATAMT" ColumnName="VATAMT" />
+          <ScalarProperty Name="NETAMT" ColumnName="NETAMT" />
+          <ScalarProperty Name="NETVAL" ColumnName="NETVAL" />
+          <ScalarProperty Name="CMPLDAT" ColumnName="CMPLDAT" />
+          <ScalarProperty Name="DOCSTAT" ColumnName="DOCSTAT" />
+          <ScalarProperty Name="DLVBY" ColumnName="DLVBY" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="CHGDAT" ColumnName="CHGDAT" />
+          <ScalarProperty Name="USERPRN" ColumnName="USERPRN" />
+          <ScalarProperty Name="PRNDAT" ColumnName="PRNDAT" />
+          <ScalarProperty Name="PRNCNT" ColumnName="PRNCNT" />
+          <ScalarProperty Name="PRNTIM" ColumnName="PRNTIM" />
+          <ScalarProperty Name="AUTHID" ColumnName="AUTHID" />
+          <ScalarProperty Name="APPROVE" ColumnName="APPROVE" />
+          <ScalarProperty Name="BILLTO" ColumnName="BILLTO" />
+          <ScalarProperty Name="ORGNUM" ColumnName="ORGNUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OESO_V">
+      <EntityTypeMapping TypeName="TCIModel.OESO_V">
+        <MappingFragment StoreEntitySet="OESO_V">
+          <ScalarProperty Name="SORECTYP" ColumnName="SORECTYP" />
+          <ScalarProperty Name="SONUM" ColumnName="SONUM" />
+          <ScalarProperty Name="SODAT" ColumnName="SODAT" />
+          <ScalarProperty Name="FLGVAT" ColumnName="FLGVAT" />
+          <ScalarProperty Name="DEPCOD" ColumnName="DEPCOD" />
+          <ScalarProperty Name="SLMCOD" ColumnName="SLMCOD" />
+          <ScalarProperty Name="CUSCOD" ColumnName="CUSCOD" />
+          <ScalarProperty Name="SHIPTO" ColumnName="SHIPTO" />
+          <ScalarProperty Name="YOUREF" ColumnName="YOUREF" />
+          <ScalarProperty Name="RFF" ColumnName="RFF" />
+          <ScalarProperty Name="AREACOD" ColumnName="AREACOD" />
+          <ScalarProperty Name="PAYTRM" ColumnName="PAYTRM" />
+          <ScalarProperty Name="DLVDAT" ColumnName="DLVDAT" />
+          <ScalarProperty Name="DLVTIM" ColumnName="DLVTIM" />
+          <ScalarProperty Name="DLVDAT_IT" ColumnName="DLVDAT_IT" />
+          <ScalarProperty Name="NXTSEQ" ColumnName="NXTSEQ" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="DISC" ColumnName="DISC" />
+          <ScalarProperty Name="DISCAMT" ColumnName="DISCAMT" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="AMTRAT0" ColumnName="AMTRAT0" />
+          <ScalarProperty Name="VATRAT" ColumnName="VATRAT" />
+          <ScalarProperty Name="VATAMT" ColumnName="VATAMT" />
+          <ScalarProperty Name="NETAMT" ColumnName="NETAMT" />
+          <ScalarProperty Name="NETVAL" ColumnName="NETVAL" />
+          <ScalarProperty Name="CMPLDAT" ColumnName="CMPLDAT" />
+          <ScalarProperty Name="DOCSTAT" ColumnName="DOCSTAT" />
+          <ScalarProperty Name="DLVBY" ColumnName="DLVBY" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="CHGDAT" ColumnName="CHGDAT" />
+          <ScalarProperty Name="USERPRN" ColumnName="USERPRN" />
+          <ScalarProperty Name="PRNDAT" ColumnName="PRNDAT" />
+          <ScalarProperty Name="PRNCNT" ColumnName="PRNCNT" />
+          <ScalarProperty Name="PRNTIM" ColumnName="PRNTIM" />
+          <ScalarProperty Name="AUTHID" ColumnName="AUTHID" />
+          <ScalarProperty Name="APPROVE" ColumnName="APPROVE" />
+          <ScalarProperty Name="BILLTO" ColumnName="BILLTO" />
+          <ScalarProperty Name="ORGNUM" ColumnName="ORGNUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OESOIT">
+      <EntityTypeMapping TypeName="TCIModel.OESOIT">
+        <MappingFragment StoreEntitySet="OESOIT">
+          <ScalarProperty Name="SORECTYP" ColumnName="SORECTYP" />
+          <ScalarProperty Name="SONUM" ColumnName="SONUM" />
+          <ScalarProperty Name="SEQNUM" ColumnName="SEQNUM" />
+          <ScalarProperty Name="SODAT" ColumnName="SODAT" />
+          <ScalarProperty Name="DLVDAT" ColumnName="DLVDAT" />
+          <ScalarProperty Name="CUSCOD" ColumnName="CUSCOD" />
+          <ScalarProperty Name="STKCOD" ColumnName="STKCOD" />
+          <ScalarProperty Name="LOCCOD" ColumnName="LOCCOD" />
+          <ScalarProperty Name="STKDES" ColumnName="STKDES" />
+          <ScalarProperty Name="DEPCOD" ColumnName="DEPCOD" />
+          <ScalarProperty Name="VATCOD" ColumnName="VATCOD" />
+          <ScalarProperty Name="FREE" ColumnName="FREE" />
+          <ScalarProperty Name="ORDQTY" ColumnName="ORDQTY" />
+          <ScalarProperty Name="CANCELQTY" ColumnName="CANCELQTY" />
+          <ScalarProperty Name="CANCELTYP" ColumnName="CANCELTYP" />
+          <ScalarProperty Name="CANCELDAT" ColumnName="CANCELDAT" />
+          <ScalarProperty Name="REMQTY" ColumnName="REMQTY" />
+          <ScalarProperty Name="TFACTOR" ColumnName="TFACTOR" />
+          <ScalarProperty Name="UNITPR" ColumnName="UNITPR" />
+          <ScalarProperty Name="TQUCOD" ColumnName="TQUCOD" />
+          <ScalarProperty Name="DISC" ColumnName="DISC" />
+          <ScalarProperty Name="DISCAMT" ColumnName="DISCAMT" />
+          <ScalarProperty Name="TRNVAL" ColumnName="TRNVAL" />
+          <ScalarProperty Name="PACKING" ColumnName="PACKING" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OESOIT_V">
+      <EntityTypeMapping TypeName="TCIModel.OESOIT_V">
+        <MappingFragment StoreEntitySet="OESOIT_V">
+          <ScalarProperty Name="SORECTYP" ColumnName="SORECTYP" />
+          <ScalarProperty Name="SONUM" ColumnName="SONUM" />
+          <ScalarProperty Name="SEQNUM" ColumnName="SEQNUM" />
+          <ScalarProperty Name="SODAT" ColumnName="SODAT" />
+          <ScalarProperty Name="DLVDAT" ColumnName="DLVDAT" />
+          <ScalarProperty Name="CUSCOD" ColumnName="CUSCOD" />
+          <ScalarProperty Name="STKCOD" ColumnName="STKCOD" />
+          <ScalarProperty Name="LOCCOD" ColumnName="LOCCOD" />
+          <ScalarProperty Name="STKDES" ColumnName="STKDES" />
+          <ScalarProperty Name="DEPCOD" ColumnName="DEPCOD" />
+          <ScalarProperty Name="VATCOD" ColumnName="VATCOD" />
+          <ScalarProperty Name="FREE" ColumnName="FREE" />
+          <ScalarProperty Name="ORDQTY" ColumnName="ORDQTY" />
+          <ScalarProperty Name="CANCELQTY" ColumnName="CANCELQTY" />
+          <ScalarProperty Name="CANCELTYP" ColumnName="CANCELTYP" />
+          <ScalarProperty Name="CANCELDAT" ColumnName="CANCELDAT" />
+          <ScalarProperty Name="REMQTY" ColumnName="REMQTY" />
+          <ScalarProperty Name="TFACTOR" ColumnName="TFACTOR" />
+          <ScalarProperty Name="UNITPR" ColumnName="UNITPR" />
+          <ScalarProperty Name="TQUCOD" ColumnName="TQUCOD" />
+          <ScalarProperty Name="DISC" ColumnName="DISC" />
+          <ScalarProperty Name="DISCAMT" ColumnName="DISCAMT" />
+          <ScalarProperty Name="TRNVAL" ColumnName="TRNVAL" />
+          <ScalarProperty Name="PACKING" ColumnName="PACKING" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEST">
+      <EntityTypeMapping TypeName="TCIModel.TEST">
+        <MappingFragment StoreEntitySet="TEST">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ARMAS">
+      <EntityTypeMapping TypeName="TCIModel.ARMAS">
+        <MappingFragment StoreEntitySet="ARMAS">
+          <ScalarProperty Name="inactdat" ColumnName="inactdat" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="chgdat" ColumnName="chgdat" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="credat" ColumnName="credat" />
+          <ScalarProperty Name="creby" ColumnName="creby" />
+          <ScalarProperty Name="tracksal" ColumnName="tracksal" />
+          <ScalarProperty Name="dlvby" ColumnName="dlvby" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="accnum" ColumnName="accnum" />
+          <ScalarProperty Name="lasivc" ColumnName="lasivc" />
+          <ScalarProperty Name="crline" ColumnName="crline" />
+          <ScalarProperty Name="chqrcv" ColumnName="chqrcv" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+          <ScalarProperty Name="tabpr" ColumnName="tabpr" />
+          <ScalarProperty Name="payer" ColumnName="payer" />
+          <ScalarProperty Name="paycond" ColumnName="paycond" />
+          <ScalarProperty Name="paytrm" ColumnName="paytrm" />
+          <ScalarProperty Name="areacod" ColumnName="areacod" />
+          <ScalarProperty Name="slmcod" ColumnName="slmcod" />
+          <ScalarProperty Name="shipto" ColumnName="shipto" />
+          <ScalarProperty Name="taxcond" ColumnName="taxcond" />
+          <ScalarProperty Name="taxgrp" ColumnName="taxgrp" />
+          <ScalarProperty Name="taxrat" ColumnName="taxrat" />
+          <ScalarProperty Name="taxtyp" ColumnName="taxtyp" />
+          <ScalarProperty Name="orgnum" ColumnName="orgnum" />
+          <ScalarProperty Name="taxid" ColumnName="taxid" />
+          <ScalarProperty Name="cusnam2" ColumnName="cusnam2" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="telnum" ColumnName="telnum" />
+          <ScalarProperty Name="zipcod" ColumnName="zipcod" />
+          <ScalarProperty Name="addr03" ColumnName="addr03" />
+          <ScalarProperty Name="addr02" ColumnName="addr02" />
+          <ScalarProperty Name="addr01" ColumnName="addr01" />
+          <ScalarProperty Name="cusnam" ColumnName="cusnam" />
+          <ScalarProperty Name="prenam" ColumnName="prenam" />
+          <ScalarProperty Name="custyp" ColumnName="custyp" />
+          <ScalarProperty Name="cuscod" ColumnName="cuscod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

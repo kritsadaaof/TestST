@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TCIModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'TCI.dbo.ARMAS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="ARMAS">
+          <Key>
+            <PropertyRef Name="cuscod" />
+          </Key>
+          <Property Name="cuscod" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="custyp" Type="nvarchar" MaxLength="255" />
+          <Property Name="prenam" Type="nvarchar" MaxLength="255" />
+          <Property Name="cusnam" Type="nvarchar" MaxLength="255" />
+          <Property Name="addr01" Type="nvarchar" MaxLength="255" />
+          <Property Name="addr02" Type="nvarchar" MaxLength="255" />
+          <Property Name="addr03" Type="nvarchar" MaxLength="255" />
+          <Property Name="zipcod" Type="nvarchar" MaxLength="255" />
+          <Property Name="telnum" Type="nvarchar" MaxLength="255" />
+          <Property Name="contact" Type="nvarchar" MaxLength="255" />
+          <Property Name="cusnam2" Type="nvarchar" MaxLength="255" />
+          <Property Name="taxid" Type="nvarchar" MaxLength="255" />
+          <Property Name="orgnum" Type="float" />
+          <Property Name="taxtyp" Type="nvarchar" MaxLength="255" />
+          <Property Name="taxrat" Type="float" />
+          <Property Name="taxgrp" Type="nvarchar" MaxLength="255" />
+          <Property Name="taxcond" Type="nvarchar" MaxLength="255" />
+          <Property Name="shipto" Type="nvarchar" MaxLength="255" />
+          <Property Name="slmcod" Type="nvarchar" MaxLength="255" />
+          <Property Name="areacod" Type="nvarchar" MaxLength="255" />
+          <Property Name="paytrm" Type="float" />
+          <Property Name="paycond" Type="nvarchar" MaxLength="255" />
+          <Property Name="payer" Type="nvarchar" MaxLength="255" />
+          <Property Name="tabpr" Type="nvarchar" MaxLength="255" />
+          <Property Name="disc" Type="nvarchar" MaxLength="255" />
+          <Property Name="balance" Type="float" />
+          <Property Name="chqrcv" Type="float" />
+          <Property Name="crline" Type="float" />
+          <Property Name="lasivc" Type="nvarchar" MaxLength="255" />
+          <Property Name="accnum" Type="nvarchar" MaxLength="255" />
+          <Property Name="remark" Type="nvarchar" MaxLength="255" />
+          <Property Name="dlvby" Type="nvarchar" MaxLength="255" />
+          <Property Name="tracksal" Type="nvarchar" MaxLength="255" />
+          <Property Name="creby" Type="nvarchar" MaxLength="255" />
+          <Property Name="credat" Type="datetime" />
+          <Property Name="userid" Type="nvarchar" MaxLength="255" />
+          <Property Name="chgdat" Type="datetime" />
+          <Property Name="status" Type="nvarchar" MaxLength="255" />
+          <Property Name="inactdat" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'TCI.dbo.OESO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="OESO">
+          <Key>
+            <PropertyRef Name="SORECTYP" />
+          </Key>
+          <Property Name="SORECTYP" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="SONUM" Type="nvarchar" MaxLength="12" />
+          <Property Name="SODAT" Type="datetime2" Precision="7" />
+          <Property Name="FLGVAT" Type="nvarchar" MaxLength="1" />
+          <Property Name="DEPCOD" Type="nvarchar" MaxLength="4" />
+          <Property Name="SLMCOD" Type="nvarchar" MaxLength="10" />
+          <Property Name="CUSCOD" Type="nvarchar" MaxLength="10" />
+          <Property Name="SHIPTO" Type="nvarchar" MaxLength="10" />
+          <Property Name="YOUREF" Type="nvarchar" MaxLength="30" />
+          <Property Name="RFF" Type="nvarchar" MaxLength="11" />
+          <Property Name="AREACOD" Type="nvarchar" MaxLength="4" />
+          <Property Name="PAYTRM" Type="int" />
+          <Property Name="DLVDAT" Type="datetime2" Precision="7" />
+          <Property Name="DLVTIM" Type="nvarchar" MaxLength="4" />
+          <Property Name="DLVDAT_IT" Type="nvarchar" MaxLength="1" />
+          <Property Name="NXTSEQ" Type="nvarchar" MaxLength="3" />
+          <Property Name="AMOUNT" Type="decimal" Precision="35" Scale="0" />
+          <Property Name="DISC" Type="nvarchar" MaxLength="10" />
+          <Property Name="DISCAMT" Type="decimal" Precision="38" Scale="0" />
+          <Property Name="TOTAL" Type="decimal" Precision="38" Scale="0" />
+          <Property Name="AMTRAT0" Type="decimal" Precision="38" Scale="0" />
+          <Property Name="VATRAT" Type="int" />
+          <Property Name="VATAMT" Type="decimal" Precision="38" Scale="0" />
+          <Property Name="NETAMT" Type="decimal" Precision="38" Scale="0" />
+          <Property Name="NETVAL" Type="decimal" Precision="38" Scale="0" />
+          <Property Name="CMPLDAT" Type="datetime2" Precision="7" />
+          <Property Name="DOCSTAT" Type="nvarchar" MaxLength="1" />
+          <Property Name="DLVBY" Type="nvarchar" MaxLength="2" />
+          <Property Name="USERID" Type="nvarchar" MaxLength="8" />
+          <Property Name="CHGDAT" Type="datetime2" Precision="7" />
+          <Property Name="USERPRN" Type="nvarchar" MaxLength="8" />
+          <Property Name="PRNDAT" Type="datetime2" Precision="7" />
+          <Property Name="PRNCNT" Type="int" />
+          <Property Name="PRNTIM" Type="nvarchar" MaxLength="5" />
+          <Property Name="AUTHID" Type="nvarchar" MaxLength="8" />
+          <Property Name="APPROVE" Type="datetime2" Precision="7" />
+          <Property Name="BILLTO" Type="nvarchar" MaxLength="10" />
+          <Property Name="ORGNUM" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'TCI.dbo.OESO_V' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="OESO_V">
+          <Key>
+            <PropertyRef Name="SORECTYP" />
+          </Key>
+          <Property Name="SORECTYP" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="SONUM" Type="nvarchar" MaxLength="12" />
+          <Property Name="SODAT" Type="datetime2" Precision="7" />
+          <Property Name="FLGVAT" Type="nvarchar" MaxLength="1" />
+          <Property Name="DEPCOD" Type="nvarchar" MaxLength="4" />
+          <Property Name="SLMCOD" Type="nvarchar" MaxLength="10" />
+          <Property Name="CUSCOD" Type="nvarchar" MaxLength="10" />
+          <Property Name="SHIPTO" Type="nvarchar" MaxLength="10" />
+          <Property Name="YOUREF" Type="nvarchar" MaxLength="30" />
+          <Property Name="RFF" Type="nvarchar" MaxLength="12" />
+          <Property Name="AREACOD" Type="nvarchar" MaxLength="4" />
+          <Property Name="PAYTRM" Type="int" />
+          <Property Name="DLVDAT" Type="datetime2" Precision="7" />
+          <Property Name="DLVTIM" Type="nvarchar" MaxLength="4" />
+          <Property Name="DLVDAT_IT" Type="nvarchar" MaxLength="1" />
+          <Property Name="NXTSEQ" Type="nvarchar" MaxLength="3" />
+          <Property Name="AMOUNT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DISC" Type="nvarchar" MaxLength="10" />
+          <Property Name="DISCAMT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TOTAL" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="AMTRAT0" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="VATRAT" Type="numeric" Precision="5" Scale="0" />
+          <Property Name="VATAMT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="NETAMT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="NETVAL" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CMPLDAT" Type="datetime2" Precision="7" />
+          <Property Name="DOCSTAT" Type="nvarchar" MaxLength="1" />
+          <Property Name="DLVBY" Type="nvarchar" MaxLength="2" />
+          <Property Name="USERID" Type="nvarchar" MaxLength="8" />
+          <Property Name="CHGDAT" Type="datetime2" Precision="7" />
+          <Property Name="USERPRN" Type="nvarchar" MaxLength="8" />
+          <Property Name="PRNDAT" Type="datetime2" Precision="7" />
+          <Property Name="PRNCNT" Type="int" />
+          <Property Name="PRNTIM" Type="nvarchar" MaxLength="5" />
+          <Property Name="AUTHID" Type="nvarchar" MaxLength="8" />
+          <Property Name="APPROVE" Type="datetime2" Precision="7" />
+          <Property Name="BILLTO" Type="nvarchar" MaxLength="10" />
+          <Property Name="ORGNUM" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'TCI.dbo.OESOIT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="OESOIT">
+          <Key>
+            <PropertyRef Name="SORECTYP" />
+          </Key>
+          <Property Name="SORECTYP" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="SONUM" Type="nvarchar" MaxLength="12" />
+          <Property Name="SEQNUM" Type="nvarchar" MaxLength="3" />
+          <Property Name="SODAT" Type="datetime2" Precision="7" />
+          <Property Name="DLVDAT" Type="datetime2" Precision="7" />
+          <Property Name="CUSCOD" Type="nvarchar" MaxLength="10" />
+          <Property Name="STKCOD" Type="nvarchar" MaxLength="20" />
+          <Property Name="LOCCOD" Type="nvarchar" MaxLength="4" />
+          <Property Name="STKDES" Type="nvarchar" MaxLength="50" />
+          <Property Name="DEPCOD" Type="nvarchar" MaxLength="4" />
+          <Property Name="VATCOD" Type="nvarchar" MaxLength="1" />
+          <Property Name="FREE" Type="nvarchar" MaxLength="1" />
+          <Property Name="ORDQTY" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CANCELQTY" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CANCELTYP" Type="nvarchar" MaxLength="2" />
+          <Property Name="CANCELDAT" Type="datetime2" Precision="7" />
+          <Property Name="REMQTY" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TFACTOR" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="UNITPR" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TQUCOD" Type="nvarchar" MaxLength="2" />
+          <Property Name="DISC" Type="nvarchar" MaxLength="10" />
+          <Property Name="DISCAMT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TRNVAL" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PACKING" Type="nvarchar" MaxLength="15" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'TCI.dbo.OESOIT_V' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="OESOIT_V">
+          <Key>
+            <PropertyRef Name="SORECTYP" />
+          </Key>
+          <Property Name="SORECTYP" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="SONUM" Type="nvarchar" MaxLength="12" />
+          <Property Name="SEQNUM" Type="nvarchar" MaxLength="3" />
+          <Property Name="SODAT" Type="datetime2" Precision="7" />
+          <Property Name="DLVDAT" Type="datetime2" Precision="7" />
+          <Property Name="CUSCOD" Type="nvarchar" MaxLength="10" />
+          <Property Name="STKCOD" Type="nvarchar" MaxLength="20" />
+          <Property Name="LOCCOD" Type="nvarchar" MaxLength="4" />
+          <Property Name="STKDES" Type="nvarchar" MaxLength="50" />
+          <Property Name="DEPCOD" Type="nvarchar" MaxLength="4" />
+          <Property Name="VATCOD" Type="nvarchar" MaxLength="1" />
+          <Property Name="FREE" Type="nvarchar" MaxLength="1" />
+          <Property Name="ORDQTY" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CANCELQTY" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CANCELTYP" Type="nvarchar" MaxLength="2" />
+          <Property Name="CANCELDAT" Type="datetime2" Precision="7" />
+          <Property Name="REMQTY" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TFACTOR" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="UNITPR" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TQUCOD" Type="nvarchar" MaxLength="2" />
+          <Property Name="DISC" Type="nvarchar" MaxLength="10" />
+          <Property Name="DISCAMT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TRNVAL" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PACKING" Type="nvarchar" MaxLength="15" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'TCI.dbo.TEST' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="TEST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="TCIModelStoreContainer">
+          <EntitySet Name="ARMAS" EntityType="Self.ARMAS" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ARMAS].[cuscod] AS [cuscod], 
+    [ARMAS].[custyp] AS [custyp], 
+    [ARMAS].[prenam] AS [prenam], 
+    [ARMAS].[cusnam] AS [cusnam], 
+    [ARMAS].[addr01] AS [addr01], 
+    [ARMAS].[addr02] AS [addr02], 
+    [ARMAS].[addr03] AS [addr03], 
+    [ARMAS].[zipcod] AS [zipcod], 
+    [ARMAS].[telnum] AS [telnum], 
+    [ARMAS].[contact] AS [contact], 
+    [ARMAS].[cusnam2] AS [cusnam2], 
+    [ARMAS].[taxid] AS [taxid], 
+    [ARMAS].[orgnum] AS [orgnum], 
+    [ARMAS].[taxtyp] AS [taxtyp], 
+    [ARMAS].[taxrat] AS [taxrat], 
+    [ARMAS].[taxgrp] AS [taxgrp], 
+    [ARMAS].[taxcond] AS [taxcond], 
+    [ARMAS].[shipto] AS [shipto], 
+    [ARMAS].[slmcod] AS [slmcod], 
+    [ARMAS].[areacod] AS [areacod], 
+    [ARMAS].[paytrm] AS [paytrm], 
+    [ARMAS].[paycond] AS [paycond], 
+    [ARMAS].[payer] AS [payer], 
+    [ARMAS].[tabpr] AS [tabpr], 
+    [ARMAS].[disc] AS [disc], 
+    [ARMAS].[balance] AS [balance], 
+    [ARMAS].[chqrcv] AS [chqrcv], 
+    [ARMAS].[crline] AS [crline], 
+    [ARMAS].[lasivc] AS [lasivc], 
+    [ARMAS].[accnum] AS [accnum], 
+    [ARMAS].[remark] AS [remark], 
+    [ARMAS].[dlvby] AS [dlvby], 
+    [ARMAS].[tracksal] AS [tracksal], 
+    [ARMAS].[creby] AS [creby], 
+    [ARMAS].[credat] AS [credat], 
+    [ARMAS].[userid] AS [userid], 
+    [ARMAS].[chgdat] AS [chgdat], 
+    [ARMAS].[status] AS [status], 
+    [ARMAS].[inactdat] AS [inactdat]
+    FROM [dbo].[ARMAS] AS [ARMAS]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="OESO" EntityType="Self.OESO" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [OESO].[SORECTYP] AS [SORECTYP], 
+    [OESO].[SONUM] AS [SONUM], 
+    [OESO].[SODAT] AS [SODAT], 
+    [OESO].[FLGVAT] AS [FLGVAT], 
+    [OESO].[DEPCOD] AS [DEPCOD], 
+    [OESO].[SLMCOD] AS [SLMCOD], 
+    [OESO].[CUSCOD] AS [CUSCOD], 
+    [OESO].[SHIPTO] AS [SHIPTO], 
+    [OESO].[YOUREF] AS [YOUREF], 
+    [OESO].[RFF] AS [RFF], 
+    [OESO].[AREACOD] AS [AREACOD], 
+    [OESO].[PAYTRM] AS [PAYTRM], 
+    [OESO].[DLVDAT] AS [DLVDAT], 
+    [OESO].[DLVTIM] AS [DLVTIM], 
+    [OESO].[DLVDAT_IT] AS [DLVDAT_IT], 
+    [OESO].[NXTSEQ] AS [NXTSEQ], 
+    [OESO].[AMOUNT] AS [AMOUNT], 
+    [OESO].[DISC] AS [DISC], 
+    [OESO].[DISCAMT] AS [DISCAMT], 
+    [OESO].[TOTAL] AS [TOTAL], 
+    [OESO].[AMTRAT0] AS [AMTRAT0], 
+    [OESO].[VATRAT] AS [VATRAT], 
+    [OESO].[VATAMT] AS [VATAMT], 
+    [OESO].[NETAMT] AS [NETAMT], 
+    [OESO].[NETVAL] AS [NETVAL], 
+    [OESO].[CMPLDAT] AS [CMPLDAT], 
+    [OESO].[DOCSTAT] AS [DOCSTAT], 
+    [OESO].[DLVBY] AS [DLVBY], 
+    [OESO].[USERID] AS [USERID], 
+    [OESO].[CHGDAT] AS [CHGDAT], 
+    [OESO].[USERPRN] AS [USERPRN], 
+    [OESO].[PRNDAT] AS [PRNDAT], 
+    [OESO].[PRNCNT] AS [PRNCNT], 
+    [OESO].[PRNTIM] AS [PRNTIM], 
+    [OESO].[AUTHID] AS [AUTHID], 
+    [OESO].[APPROVE] AS [APPROVE], 
+    [OESO].[BILLTO] AS [BILLTO], 
+    [OESO].[ORGNUM] AS [ORGNUM]
+    FROM [dbo].[OESO] AS [OESO]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="OESO_V" EntityType="Self.OESO_V" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [OESO_V].[SORECTYP] AS [SORECTYP], 
+    [OESO_V].[SONUM] AS [SONUM], 
+    [OESO_V].[SODAT] AS [SODAT], 
+    [OESO_V].[FLGVAT] AS [FLGVAT], 
+    [OESO_V].[DEPCOD] AS [DEPCOD], 
+    [OESO_V].[SLMCOD] AS [SLMCOD], 
+    [OESO_V].[CUSCOD] AS [CUSCOD], 
+    [OESO_V].[SHIPTO] AS [SHIPTO], 
+    [OESO_V].[YOUREF] AS [YOUREF], 
+    [OESO_V].[RFF] AS [RFF], 
+    [OESO_V].[AREACOD] AS [AREACOD], 
+    [OESO_V].[PAYTRM] AS [PAYTRM], 
+    [OESO_V].[DLVDAT] AS [DLVDAT], 
+    [OESO_V].[DLVTIM] AS [DLVTIM], 
+    [OESO_V].[DLVDAT_IT] AS [DLVDAT_IT], 
+    [OESO_V].[NXTSEQ] AS [NXTSEQ], 
+    [OESO_V].[AMOUNT] AS [AMOUNT], 
+    [OESO_V].[DISC] AS [DISC], 
+    [OESO_V].[DISCAMT] AS [DISCAMT], 
+    [OESO_V].[TOTAL] AS [TOTAL], 
+    [OESO_V].[AMTRAT0] AS [AMTRAT0], 
+    [OESO_V].[VATRAT] AS [VATRAT], 
+    [OESO_V].[VATAMT] AS [VATAMT], 
+    [OESO_V].[NETAMT] AS [NETAMT], 
+    [OESO_V].[NETVAL] AS [NETVAL], 
+    [OESO_V].[CMPLDAT] AS [CMPLDAT], 
+    [OESO_V].[DOCSTAT] AS [DOCSTAT], 
+    [OESO_V].[DLVBY] AS [DLVBY], 
+    [OESO_V].[USERID] AS [USERID], 
+    [OESO_V].[CHGDAT] AS [CHGDAT], 
+    [OESO_V].[USERPRN] AS [USERPRN], 
+    [OESO_V].[PRNDAT] AS [PRNDAT], 
+    [OESO_V].[PRNCNT] AS [PRNCNT], 
+    [OESO_V].[PRNTIM] AS [PRNTIM], 
+    [OESO_V].[AUTHID] AS [AUTHID], 
+    [OESO_V].[APPROVE] AS [APPROVE], 
+    [OESO_V].[BILLTO] AS [BILLTO], 
+    [OESO_V].[ORGNUM] AS [ORGNUM]
+    FROM [dbo].[OESO_V] AS [OESO_V]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="OESOIT" EntityType="Self.OESOIT" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [OESOIT].[SORECTYP] AS [SORECTYP], 
+    [OESOIT].[SONUM] AS [SONUM], 
+    [OESOIT].[SEQNUM] AS [SEQNUM], 
+    [OESOIT].[SODAT] AS [SODAT], 
+    [OESOIT].[DLVDAT] AS [DLVDAT], 
+    [OESOIT].[CUSCOD] AS [CUSCOD], 
+    [OESOIT].[STKCOD] AS [STKCOD], 
+    [OESOIT].[LOCCOD] AS [LOCCOD], 
+    [OESOIT].[STKDES] AS [STKDES], 
+    [OESOIT].[DEPCOD] AS [DEPCOD], 
+    [OESOIT].[VATCOD] AS [VATCOD], 
+    [OESOIT].[FREE] AS [FREE], 
+    [OESOIT].[ORDQTY] AS [ORDQTY], 
+    [OESOIT].[CANCELQTY] AS [CANCELQTY], 
+    [OESOIT].[CANCELTYP] AS [CANCELTYP], 
+    [OESOIT].[CANCELDAT] AS [CANCELDAT], 
+    [OESOIT].[REMQTY] AS [REMQTY], 
+    [OESOIT].[TFACTOR] AS [TFACTOR], 
+    [OESOIT].[UNITPR] AS [UNITPR], 
+    [OESOIT].[TQUCOD] AS [TQUCOD], 
+    [OESOIT].[DISC] AS [DISC], 
+    [OESOIT].[DISCAMT] AS [DISCAMT], 
+    [OESOIT].[TRNVAL] AS [TRNVAL], 
+    [OESOIT].[PACKING] AS [PACKING]
+    FROM [dbo].[OESOIT] AS [OESOIT]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="OESOIT_V" EntityType="Self.OESOIT_V" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [OESOIT_V].[SORECTYP] AS [SORECTYP], 
+    [OESOIT_V].[SONUM] AS [SONUM], 
+    [OESOIT_V].[SEQNUM] AS [SEQNUM], 
+    [OESOIT_V].[SODAT] AS [SODAT], 
+    [OESOIT_V].[DLVDAT] AS [DLVDAT], 
+    [OESOIT_V].[CUSCOD] AS [CUSCOD], 
+    [OESOIT_V].[STKCOD] AS [STKCOD], 
+    [OESOIT_V].[LOCCOD] AS [LOCCOD], 
+    [OESOIT_V].[STKDES] AS [STKDES], 
+    [OESOIT_V].[DEPCOD] AS [DEPCOD], 
+    [OESOIT_V].[VATCOD] AS [VATCOD], 
+    [OESOIT_V].[FREE] AS [FREE], 
+    [OESOIT_V].[ORDQTY] AS [ORDQTY], 
+    [OESOIT_V].[CANCELQTY] AS [CANCELQTY], 
+    [OESOIT_V].[CANCELTYP] AS [CANCELTYP], 
+    [OESOIT_V].[CANCELDAT] AS [CANCELDAT], 
+    [OESOIT_V].[REMQTY] AS [REMQTY], 
+    [OESOIT_V].[TFACTOR] AS [TFACTOR], 
+    [OESOIT_V].[UNITPR] AS [UNITPR], 
+    [OESOIT_V].[TQUCOD] AS [TQUCOD], 
+    [OESOIT_V].[DISC] AS [DISC], 
+    [OESOIT_V].[DISCAMT] AS [DISCAMT], 
+    [OESOIT_V].[TRNVAL] AS [TRNVAL], 
+    [OESOIT_V].[PACKING] AS [PACKING]
+    FROM [dbo].[OESOIT_V] AS [OESOIT_V]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="TEST" EntityType="Self.TEST" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [TEST].[ID] AS [ID], 
+    [TEST].[Name] AS [Name]
+    FROM [dbo].[TEST] AS [TEST]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TCIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="OESO">
+          <Key>
+            <PropertyRef Name="SORECTYP" />
+          </Key>
+          <Property Name="SORECTYP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SONUM" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="SODAT" Type="DateTime" Precision="7" />
+          <Property Name="FLGVAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="DEPCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="SLMCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CUSCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SHIPTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="YOUREF" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="RFF" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="AREACOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="PAYTRM" Type="Int32" />
+          <Property Name="DLVDAT" Type="DateTime" Precision="7" />
+          <Property Name="DLVTIM" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="DLVDAT_IT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="NXTSEQ" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="AMOUNT" Type="Decimal" Precision="35" Scale="0" />
+          <Property Name="DISC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DISCAMT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TOTAL" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="AMTRAT0" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="VATRAT" Type="Int32" />
+          <Property Name="VATAMT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NETAMT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NETVAL" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CMPLDAT" Type="DateTime" Precision="7" />
+          <Property Name="DOCSTAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="DLVBY" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="USERID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="CHGDAT" Type="DateTime" Precision="7" />
+          <Property Name="USERPRN" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="PRNDAT" Type="DateTime" Precision="7" />
+          <Property Name="PRNCNT" Type="Int32" />
+          <Property Name="PRNTIM" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="AUTHID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="APPROVE" Type="DateTime" Precision="7" />
+          <Property Name="BILLTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ORGNUM" Type="Int32" />
+        </EntityType>
+        <EntityType Name="OESO_V">
+          <Key>
+            <PropertyRef Name="SORECTYP" />
+          </Key>
+          <Property Name="SORECTYP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SONUM" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="SODAT" Type="DateTime" Precision="7" />
+          <Property Name="FLGVAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="DEPCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="SLMCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CUSCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SHIPTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="YOUREF" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="RFF" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="AREACOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="PAYTRM" Type="Int32" />
+          <Property Name="DLVDAT" Type="DateTime" Precision="7" />
+          <Property Name="DLVTIM" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="DLVDAT_IT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="NXTSEQ" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DISC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DISCAMT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TOTAL" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AMTRAT0" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="VATRAT" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="VATAMT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="NETAMT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="NETVAL" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CMPLDAT" Type="DateTime" Precision="7" />
+          <Property Name="DOCSTAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="DLVBY" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="USERID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="CHGDAT" Type="DateTime" Precision="7" />
+          <Property Name="USERPRN" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="PRNDAT" Type="DateTime" Precision="7" />
+          <Property Name="PRNCNT" Type="Int32" />
+          <Property Name="PRNTIM" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="AUTHID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="APPROVE" Type="DateTime" Precision="7" />
+          <Property Name="BILLTO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ORGNUM" Type="Int32" />
+        </EntityType>
+        <EntityType Name="OESOIT">
+          <Key>
+            <PropertyRef Name="SORECTYP" />
+          </Key>
+          <Property Name="SORECTYP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SONUM" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="SEQNUM" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="SODAT" Type="DateTime" Precision="7" />
+          <Property Name="DLVDAT" Type="DateTime" Precision="7" />
+          <Property Name="CUSCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="STKCOD" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LOCCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="STKDES" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DEPCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="VATCOD" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="FREE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ORDQTY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CANCELQTY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CANCELTYP" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="CANCELDAT" Type="DateTime" Precision="7" />
+          <Property Name="REMQTY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TFACTOR" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="UNITPR" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TQUCOD" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="DISC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DISCAMT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TRNVAL" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PACKING" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="OESOIT_V">
+          <Key>
+            <PropertyRef Name="SORECTYP" />
+          </Key>
+          <Property Name="SORECTYP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SONUM" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="SEQNUM" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="SODAT" Type="DateTime" Precision="7" />
+          <Property Name="DLVDAT" Type="DateTime" Precision="7" />
+          <Property Name="CUSCOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="STKCOD" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LOCCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="STKDES" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DEPCOD" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="VATCOD" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="FREE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="ORDQTY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CANCELQTY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CANCELTYP" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="CANCELDAT" Type="DateTime" Precision="7" />
+          <Property Name="REMQTY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TFACTOR" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="UNITPR" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TQUCOD" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="DISC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DISCAMT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TRNVAL" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PACKING" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TEST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="TCIEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="OESO" EntityType="Self.OESO" />
+          <EntitySet Name="OESO_V" EntityType="Self.OESO_V" />
+          <EntitySet Name="OESOIT" EntityType="Self.OESOIT" />
+          <EntitySet Name="OESOIT_V" EntityType="Self.OESOIT_V" />
+          <EntitySet Name="TEST" EntityType="Self.TEST" />
+          <EntitySet Name="ARMAS" EntityType="TCIModel.ARMAS" />
+        </EntityContainer>
+        <EntityType Name="ARMAS">
+          <Key>
+            <PropertyRef Name="cuscod" />
+          </Key>
+          <Property Name="cuscod" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="custyp" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="prenam" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="cusnam" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="addr01" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="addr02" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="addr03" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="zipcod" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="telnum" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="contact" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="cusnam2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="taxid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="orgnum" Type="Double" />
+          <Property Name="taxtyp" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="taxrat" Type="Double" />
+          <Property Name="taxgrp" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="taxcond" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="shipto" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="slmcod" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="areacod" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="paytrm" Type="Double" />
+          <Property Name="paycond" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="payer" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tabpr" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="disc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="balance" Type="Double" />
+          <Property Name="chqrcv" Type="Double" />
+          <Property Name="crline" Type="Double" />
+          <Property Name="lasivc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="accnum" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="remark" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="dlvby" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tracksal" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="creby" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="credat" Type="DateTime" Precision="3" />
+          <Property Name="userid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="chgdat" Type="DateTime" Precision="3" />
+          <Property Name="status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="inactdat" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TCIModelStoreContainer" CdmEntityContainer="TCIEntities">
+          <EntitySetMapping Name="OESO">
+            <EntityTypeMapping TypeName="TCIModel.OESO">
+              <MappingFragment StoreEntitySet="OESO">
+                <ScalarProperty Name="SORECTYP" ColumnName="SORECTYP" />
+                <ScalarProperty Name="SONUM" ColumnName="SONUM" />
+                <ScalarProperty Name="SODAT" ColumnName="SODAT" />
+                <ScalarProperty Name="FLGVAT" ColumnName="FLGVAT" />
+                <ScalarProperty Name="DEPCOD" ColumnName="DEPCOD" />
+                <ScalarProperty Name="SLMCOD" ColumnName="SLMCOD" />
+                <ScalarProperty Name="CUSCOD" ColumnName="CUSCOD" />
+                <ScalarProperty Name="SHIPTO" ColumnName="SHIPTO" />
+                <ScalarProperty Name="YOUREF" ColumnName="YOUREF" />
+                <ScalarProperty Name="RFF" ColumnName="RFF" />
+                <ScalarProperty Name="AREACOD" ColumnName="AREACOD" />
+                <ScalarProperty Name="PAYTRM" ColumnName="PAYTRM" />
+                <ScalarProperty Name="DLVDAT" ColumnName="DLVDAT" />
+                <ScalarProperty Name="DLVTIM" ColumnName="DLVTIM" />
+                <ScalarProperty Name="DLVDAT_IT" ColumnName="DLVDAT_IT" />
+                <ScalarProperty Name="NXTSEQ" ColumnName="NXTSEQ" />
+                <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+                <ScalarProperty Name="DISC" ColumnName="DISC" />
+                <ScalarProperty Name="DISCAMT" ColumnName="DISCAMT" />
+                <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+                <ScalarProperty Name="AMTRAT0" ColumnName="AMTRAT0" />
+                <ScalarProperty Name="VATRAT" ColumnName="VATRAT" />
+                <ScalarProperty Name="VATAMT" ColumnName="VATAMT" />
+                <ScalarProperty Name="NETAMT" ColumnName="NETAMT" />
+                <ScalarProperty Name="NETVAL" ColumnName="NETVAL" />
+                <ScalarProperty Name="CMPLDAT" ColumnName="CMPLDAT" />
+                <ScalarProperty Name="DOCSTAT" ColumnName="DOCSTAT" />
+                <ScalarProperty Name="DLVBY" ColumnName="DLVBY" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="CHGDAT" ColumnName="CHGDAT" />
+                <ScalarProperty Name="USERPRN" ColumnName="USERPRN" />
+                <ScalarProperty Name="PRNDAT" ColumnName="PRNDAT" />
+                <ScalarProperty Name="PRNCNT" ColumnName="PRNCNT" />
+                <ScalarProperty Name="PRNTIM" ColumnName="PRNTIM" />
+                <ScalarProperty Name="AUTHID" ColumnName="AUTHID" />
+                <ScalarProperty Name="APPROVE" ColumnName="APPROVE" />
+                <ScalarProperty Name="BILLTO" ColumnName="BILLTO" />
+                <ScalarProperty Name="ORGNUM" ColumnName="ORGNUM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OESO_V">
+            <EntityTypeMapping TypeName="TCIModel.OESO_V">
+              <MappingFragment StoreEntitySet="OESO_V">
+                <ScalarProperty Name="SORECTYP" ColumnName="SORECTYP" />
+                <ScalarProperty Name="SONUM" ColumnName="SONUM" />
+                <ScalarProperty Name="SODAT" ColumnName="SODAT" />
+                <ScalarProperty Name="FLGVAT" ColumnName="FLGVAT" />
+                <ScalarProperty Name="DEPCOD" ColumnName="DEPCOD" />
+                <ScalarProperty Name="SLMCOD" ColumnName="SLMCOD" />
+                <ScalarProperty Name="CUSCOD" ColumnName="CUSCOD" />
+                <ScalarProperty Name="SHIPTO" ColumnName="SHIPTO" />
+                <ScalarProperty Name="YOUREF" ColumnName="YOUREF" />
+                <ScalarProperty Name="RFF" ColumnName="RFF" />
+                <ScalarProperty Name="AREACOD" ColumnName="AREACOD" />
+                <ScalarProperty Name="PAYTRM" ColumnName="PAYTRM" />
+                <ScalarProperty Name="DLVDAT" ColumnName="DLVDAT" />
+                <ScalarProperty Name="DLVTIM" ColumnName="DLVTIM" />
+                <ScalarProperty Name="DLVDAT_IT" ColumnName="DLVDAT_IT" />
+                <ScalarProperty Name="NXTSEQ" ColumnName="NXTSEQ" />
+                <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+                <ScalarProperty Name="DISC" ColumnName="DISC" />
+                <ScalarProperty Name="DISCAMT" ColumnName="DISCAMT" />
+                <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+                <ScalarProperty Name="AMTRAT0" ColumnName="AMTRAT0" />
+                <ScalarProperty Name="VATRAT" ColumnName="VATRAT" />
+                <ScalarProperty Name="VATAMT" ColumnName="VATAMT" />
+                <ScalarProperty Name="NETAMT" ColumnName="NETAMT" />
+                <ScalarProperty Name="NETVAL" ColumnName="NETVAL" />
+                <ScalarProperty Name="CMPLDAT" ColumnName="CMPLDAT" />
+                <ScalarProperty Name="DOCSTAT" ColumnName="DOCSTAT" />
+                <ScalarProperty Name="DLVBY" ColumnName="DLVBY" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+                <ScalarProperty Name="CHGDAT" ColumnName="CHGDAT" />
+                <ScalarProperty Name="USERPRN" ColumnName="USERPRN" />
+                <ScalarProperty Name="PRNDAT" ColumnName="PRNDAT" />
+                <ScalarProperty Name="PRNCNT" ColumnName="PRNCNT" />
+                <ScalarProperty Name="PRNTIM" ColumnName="PRNTIM" />
+                <ScalarProperty Name="AUTHID" ColumnName="AUTHID" />
+                <ScalarProperty Name="APPROVE" ColumnName="APPROVE" />
+                <ScalarProperty Name="BILLTO" ColumnName="BILLTO" />
+                <ScalarProperty Name="ORGNUM" ColumnName="ORGNUM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OESOIT">
+            <EntityTypeMapping TypeName="TCIModel.OESOIT">
+              <MappingFragment StoreEntitySet="OESOIT">
+                <ScalarProperty Name="SORECTYP" ColumnName="SORECTYP" />
+                <ScalarProperty Name="SONUM" ColumnName="SONUM" />
+                <ScalarProperty Name="SEQNUM" ColumnName="SEQNUM" />
+                <ScalarProperty Name="SODAT" ColumnName="SODAT" />
+                <ScalarProperty Name="DLVDAT" ColumnName="DLVDAT" />
+                <ScalarProperty Name="CUSCOD" ColumnName="CUSCOD" />
+                <ScalarProperty Name="STKCOD" ColumnName="STKCOD" />
+                <ScalarProperty Name="LOCCOD" ColumnName="LOCCOD" />
+                <ScalarProperty Name="STKDES" ColumnName="STKDES" />
+                <ScalarProperty Name="DEPCOD" ColumnName="DEPCOD" />
+                <ScalarProperty Name="VATCOD" ColumnName="VATCOD" />
+                <ScalarProperty Name="FREE" ColumnName="FREE" />
+                <ScalarProperty Name="ORDQTY" ColumnName="ORDQTY" />
+                <ScalarProperty Name="CANCELQTY" ColumnName="CANCELQTY" />
+                <ScalarProperty Name="CANCELTYP" ColumnName="CANCELTYP" />
+                <ScalarProperty Name="CANCELDAT" ColumnName="CANCELDAT" />
+                <ScalarProperty Name="REMQTY" ColumnName="REMQTY" />
+                <ScalarProperty Name="TFACTOR" ColumnName="TFACTOR" />
+                <ScalarProperty Name="UNITPR" ColumnName="UNITPR" />
+                <ScalarProperty Name="TQUCOD" ColumnName="TQUCOD" />
+                <ScalarProperty Name="DISC" ColumnName="DISC" />
+                <ScalarProperty Name="DISCAMT" ColumnName="DISCAMT" />
+                <ScalarProperty Name="TRNVAL" ColumnName="TRNVAL" />
+                <ScalarProperty Name="PACKING" ColumnName="PACKING" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OESOIT_V">
+            <EntityTypeMapping TypeName="TCIModel.OESOIT_V">
+              <MappingFragment StoreEntitySet="OESOIT_V">
+                <ScalarProperty Name="SORECTYP" ColumnName="SORECTYP" />
+                <ScalarProperty Name="SONUM" ColumnName="SONUM" />
+                <ScalarProperty Name="SEQNUM" ColumnName="SEQNUM" />
+                <ScalarProperty Name="SODAT" ColumnName="SODAT" />
+                <ScalarProperty Name="DLVDAT" ColumnName="DLVDAT" />
+                <ScalarProperty Name="CUSCOD" ColumnName="CUSCOD" />
+                <ScalarProperty Name="STKCOD" ColumnName="STKCOD" />
+                <ScalarProperty Name="LOCCOD" ColumnName="LOCCOD" />
+                <ScalarProperty Name="STKDES" ColumnName="STKDES" />
+                <ScalarProperty Name="DEPCOD" ColumnName="DEPCOD" />
+                <ScalarProperty Name="VATCOD" ColumnName="VATCOD" />
+                <ScalarProperty Name="FREE" ColumnName="FREE" />
+                <ScalarProperty Name="ORDQTY" ColumnName="ORDQTY" />
+                <ScalarProperty Name="CANCELQTY" ColumnName="CANCELQTY" />
+                <ScalarProperty Name="CANCELTYP" ColumnName="CANCELTYP" />
+                <ScalarProperty Name="CANCELDAT" ColumnName="CANCELDAT" />
+                <ScalarProperty Name="REMQTY" ColumnName="REMQTY" />
+                <ScalarProperty Name="TFACTOR" ColumnName="TFACTOR" />
+                <ScalarProperty Name="UNITPR" ColumnName="UNITPR" />
+                <ScalarProperty Name="TQUCOD" ColumnName="TQUCOD" />
+                <ScalarProperty Name="DISC" ColumnName="DISC" />
+                <ScalarProperty Name="DISCAMT" ColumnName="DISCAMT" />
+                <ScalarProperty Name="TRNVAL" ColumnName="TRNVAL" />
+                <ScalarProperty Name="PACKING" ColumnName="PACKING" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TEST">
+            <EntityTypeMapping TypeName="TCIModel.TEST">
+              <MappingFragment StoreEntitySet="TEST">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ARMAS">
+            <EntityTypeMapping TypeName="TCIModel.ARMAS">
+              <MappingFragment StoreEntitySet="ARMAS">
+                <ScalarProperty Name="inactdat" ColumnName="inactdat" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="chgdat" ColumnName="chgdat" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="credat" ColumnName="credat" />
+                <ScalarProperty Name="creby" ColumnName="creby" />
+                <ScalarProperty Name="tracksal" ColumnName="tracksal" />
+                <ScalarProperty Name="dlvby" ColumnName="dlvby" />
+                <ScalarProperty Name="remark" ColumnName="remark" />
+                <ScalarProperty Name="accnum" ColumnName="accnum" />
+                <ScalarProperty Name="lasivc" ColumnName="lasivc" />
+                <ScalarProperty Name="crline" ColumnName="crline" />
+                <ScalarProperty Name="chqrcv" ColumnName="chqrcv" />
+                <ScalarProperty Name="balance" ColumnName="balance" />
+                <ScalarProperty Name="disc" ColumnName="disc" />
+                <ScalarProperty Name="tabpr" ColumnName="tabpr" />
+                <ScalarProperty Name="payer" ColumnName="payer" />
+                <ScalarProperty Name="paycond" ColumnName="paycond" />
+                <ScalarProperty Name="paytrm" ColumnName="paytrm" />
+                <ScalarProperty Name="areacod" ColumnName="areacod" />
+                <ScalarProperty Name="slmcod" ColumnName="slmcod" />
+                <ScalarProperty Name="shipto" ColumnName="shipto" />
+                <ScalarProperty Name="taxcond" ColumnName="taxcond" />
+                <ScalarProperty Name="taxgrp" ColumnName="taxgrp" />
+                <ScalarProperty Name="taxrat" ColumnName="taxrat" />
+                <ScalarProperty Name="taxtyp" ColumnName="taxtyp" />
+                <ScalarProperty Name="orgnum" ColumnName="orgnum" />
+                <ScalarProperty Name="taxid" ColumnName="taxid" />
+                <ScalarProperty Name="cusnam2" ColumnName="cusnam2" />
+                <ScalarProperty Name="contact" ColumnName="contact" />
+                <ScalarProperty Name="telnum" ColumnName="telnum" />
+                <ScalarProperty Name="zipcod" ColumnName="zipcod" />
+                <ScalarProperty Name="addr03" ColumnName="addr03" />
+                <ScalarProperty Name="addr02" ColumnName="addr02" />
+                <ScalarProperty Name="addr01" ColumnName="addr01" />
+                <ScalarProperty Name="cusnam" ColumnName="cusnam" />
+                <ScalarProperty Name="prenam" ColumnName="prenam" />
+                <ScalarProperty Name="custyp" ColumnName="custyp" />
+                <ScalarProperty Name="cuscod" ColumnName="cuscod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

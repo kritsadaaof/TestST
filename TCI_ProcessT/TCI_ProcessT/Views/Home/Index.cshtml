@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+@Scripts.Render("~/Home_Index/js") 
+<script src="~/Content/js/dialog/sweetalert2.min.js"></script>
+<!--  animation JS
+    ============================================ -->
+<script src="~/Content/js/animation/animation-active.js"></script>
+
+<link rel="stylesheet" href="~/Content/css/jquery.dataTables.min.css" />
+<!-- animate CSS
+       ============================================ -->
+<link rel="stylesheet" href="~/Content/css/animate.css" />
+<link rel="stylesheet" href="~/Content/css/animation/animation-custom.css" />
+<!-- dialog CSS
+        ============================================ -->
+<link rel="stylesheet" href="~/Content/css/dialog/sweetalert2.min.css">
+<link rel="stylesheet" href="~/Content/css/dialog/dialog.css">
+<body>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <a href="~/Sales/SalesOrder">
+                <div class="wb-traffic-inner notika-shadow mg-t-10 sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                    <div class="website-traffic-ctn">
+                        <h3><span class=""><label id="SaleJob"></label>1</span> Job</h3>
+                        <p> Sale Request </p>
+                    </div>
+                    <div class="sparkline-bar-stats1">1,2,3,5,7,5,5,5,7,5,3,1</div>
+
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <a href="~/Planning/PLOrder">
+                <div class="wb-traffic-inner notika-shadow mg-t-10 sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                    <div class="website-traffic-ctn">
+                        <h3><span class=""><label id="PLJob"></label>4</span> Job</h3>
+                        <p>Planning Order<i style="color:red">(รอเบิก)</i> </p>
+                    </div>
+                    <div class="sparkline-bar-stats3">4,2,8,2,5,6,3,8,3,5,9,5</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <a href="~/Warehouse/Item">
+                <div class="wb-traffic-inner notika-shadow mg-t-10 sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                    <div class="website-traffic-ctn">
+                        <h3>
+                            <span class=""> <label id="ItemRC"></label>5</span> Job
+                        </h3>
+                        <p>WH<i style="color:red">(รอโอนเข้าคลัง)</i></p>
+                    </div>
+                    <div class="sparkline-bar-stats2">1,4,8,3,5,6,4,8,3,3,9,5</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <a href="~/PD/Production">
+                <div class="wb-traffic-inner notika-shadow mg-t-10 sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                    <div class="website-traffic-ctn">
+                        <h3><span class=""><label id="RSJob"></label>0</span> Job</h3>
+                        <p>Production <i style="color:red">(รอรับ)</i></p>
+                    </div>
+                    <div class="sparkline-bar-stats4">2,4,8,4,5,7,4,7,3,5,7,5</div>
+                </div>
+            </a>
+        </div>
+    </div> 
+    <br />
+    <div class="table-responsive">
+        <table id="data-table-basic" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>SO</th>
+                    <th>SO Date</th>
+                    <th>Customer</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+
+
+
+
+
+
+
